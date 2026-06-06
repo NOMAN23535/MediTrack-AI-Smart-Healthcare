@@ -2,101 +2,93 @@
 
 ## MediTrack-AI-Smart-Healthcare
 
-An AI-powered Android healthcare application that enables symptom analysis, appointment management, medicine reminders, digital prescriptions, and doctor-patient collaboration through a secure healthcare ecosystem.
+MediTrack AI is an AI-powered Android healthcare application that enables symptom analysis, appointment management, medicine reminders, digital prescriptions, and secure doctor-patient collaboration through an integrated healthcare ecosystem.
 
 ## App Information
 
-### App Name
+| Property       | Details                    |
+| -------------- | -------------------------- |
+| App Name       | MediTrack AI               |
+| Category       | Medical                    |
+| Version        | 1.0                        |
+| Platform       | Android                    |
+| Language       | Java                       |
+| Architecture   | MVVM                       |
+| Database       | Firebase Realtime Database |
+| Authentication | Firebase Authentication    |
+| AI Integration | Groq API                   |
+| Minimum SDK    | 24                         |
+| Target SDK     | 36                         |
 
-MediTrack AI
+### App Assets
 
-### App Icon
-
-MediTrack AI Official App Icon (512×512 PNG)
-
-All application icons are available in the **Logo Icon** folder.
-
-### App Screenshots
-
-All application screenshots are available in the **Screenshots** folder.
-
-### Category
-
-Medical
-
-### Version Information
-
-**Version Name:** 1.0
-
-**Version Code:** 1
-
-### Privacy Policy
-
-MediTrack AI securely stores user data using Firebase services. User information is used only for healthcare-related features including appointments, prescriptions, medicine reminders, and AI-powered health analysis. User data is never sold or shared for commercial purposes.
+* App Icon: Available in the **Logo Icon** folder.
+* Screenshots: Available in the **Screenshots** folder.
 
 ### App Permissions
 
 * Internet Access
 * Notifications
-* Camera (Profile Picture Upload)
+* Camera Access (Profile Picture Upload)
 * Storage Access (Prescription PDFs)
 * Phone Authentication (OTP Verification)
+
+### Privacy Policy
+
+User data is securely stored using Firebase services and is utilized only for healthcare-related features such as appointments, prescriptions, reminders, and AI-powered health analysis. No user data is sold or shared for commercial purposes.
 
 # User Roles & Access Flow
 
 ## Administrator
 
-The application includes a pre-configured administrator account responsible for managing the entire healthcare ecosystem.
-
-### Admin Login Credentials
+### Login Credentials
 
 **Email:** [admin@gmail.com](mailto:admin@gmail.com)
 
 **Password:** 123456
 
-### Admin Responsibilities
+### Responsibilities
 
 * Approve or reject doctor registration requests.
-* Manage doctors, patients, and system users.
-* Monitor appointments and prescriptions.
-* Access platform analytics and reports.
+* Manage users, appointments, and prescriptions.
+* Monitor system activity and analytics.
 * Review AI chatbot interactions.
-* Maintain system security and operations.
+* Maintain platform security and operations.
 
 ## Patient
 
-Patients can directly register and access the application without requiring administrative approval.
+Patients can register and access the application instantly without administrative approval.
 
-### Patient Features
+### Features
 
-* Direct account registration and login.
-* AI-powered symptom analysis.
-* Appointment booking with approved doctors.
-* Prescription viewing and management.
-* Medicine reminders and adherence tracking.
-* Profile management.
-* Medicine inventory management.
+* Account Registration & Login
+* AI Symptom Analysis
+* Appointment Booking
+* Prescription Management
+* Medicine Reminders
+* Profile Management
+* Medicine Inventory Tracking
 
 ## Doctor
 
-Doctors must submit a registration request before gaining access to doctor functionalities.
+Doctors require administrator approval before accessing doctor functionalities.
 
-### Doctor Registration Process
+### Registration Flow
 
-1. Doctor creates an account.
-2. Registration request is submitted.
-3. Admin reviews the request.
-4. Admin approves the doctor account.
-5. Doctor gains access to all doctor features.
+1. Doctor Registration
+2. Request Submission
+3. Admin Review
+4. Account Approval
+5. Full Doctor Access
 
-### Doctor Features
+### Features
 
-* Manage patient appointments.
-* Accept or decline appointment requests.
-* Create digital prescriptions.
-* Generate prescription PDF documents.
-* Review patient history.
-* Manage healthcare records.
+* Appointment Management
+* Appointment Approval/Rejection
+* Digital Prescription Creation
+* PDF Prescription Generation
+* Patient History Review
+* Healthcare Record Management
 
 # System Workflow
 
@@ -113,209 +105,132 @@ Doctor Provides Treatment → Prescription Generated
 
 Patient Receives Prescription & Reminders
 
-AI Health Analyzer Assists Patient with Preliminary Health Guidance
+AI Health Analyzer → Preliminary Health Guidance
 ```
-
-# Application Information
-
-| Property       | Details                    |
-| -------------- | -------------------------- |
-| App Name       | MediTrack AI               |
-| Version        | 1.0                        |
-| Platform       | Android                    |
-| Language       | Java                       |
-| IDE            | Android Studio             |
-| Architecture   | MVVM                       |
-| Database       | Firebase Realtime Database |
-| Authentication | Firebase Authentication    |
-| AI Integration | Groq API                   |
-| Minimum SDK    | 24                         |
-| Target SDK     | 36                         |
 
 # Core Features
 
-## Authentication & Security
+### Authentication & Security
 
-* Email & Password Authentication
-* Google Sign-In Integration
+* Email/Password Authentication
+* Google Sign-In
 * Phone OTP Verification
 * Role-Based Access Control
-* Secure Firebase Authentication
 
-## AI Health Analyzer
+### AI Health Analyzer
 
-* Groq AI-powered symptom analysis
-* Intelligent healthcare chatbot
-* Preliminary health recommendations
-* Doctor recommendation assistance
+* Groq AI Symptom Analysis
+* Healthcare Chatbot
+* Preliminary Recommendations
+* Doctor Assistance
 
-## Appointment Management
+### Appointment Management
 
-* Appointment booking
-* Appointment approval system
-* Appointment history tracking
-* Real-time appointment updates
+* Appointment Booking
+* Approval System
+* History Tracking
+* Real-Time Updates
 
-## Digital Prescriptions
+### Digital Prescriptions
 
-* Create prescriptions digitally
-* PDF prescription generation
-* Prescription history management
-* Secure prescription storage
+* Prescription Creation
+* PDF Generation
+* Prescription History
+* Secure Storage
 
-## Medicine Reminder System
+### Medicine Management
 
-* Scheduled medicine reminders
-* Notification alerts
-* Adherence tracking
-* Medication management
+* Medicine Reminders
+* Adherence Tracking
+* Inventory Management
+* Refill Monitoring
 
-## Medicine Inventory
-
-* Medicine stock management
-* Quantity tracking
-* Refill monitoring
-
-## Push Notifications
+### Notifications
 
 * Firebase Cloud Messaging (FCM)
-* Appointment alerts
-* Prescription notifications
-* Reminder notifications
+* Appointment Alerts
+* Prescription Notifications
+* Reminder Notifications
 
-## Profile Management
+### Admin Dashboard
 
-* Update personal information
-* Change password
-* Upload profile picture
-* Account customization
-
-## Admin Dashboard
-
-* User management
-* Doctor approval management
-* Appointment monitoring
-* Prescription management
-* Chat log monitoring
-* System analytics
+* User Management
+* Doctor Approval Management
+* Appointment Monitoring
+* Prescription Monitoring
+* Analytics & Reports
 
 # Technology Stack
 
-| Category             | Technology                 |
+| Component            | Technology                 |
 | -------------------- | -------------------------- |
 | Programming Language | Java                       |
 | UI Design            | XML                        |
-| Architecture         | MVVM                       |
 | Database             | Firebase Realtime Database |
 | Authentication       | Firebase Authentication    |
 | Storage              | Firebase Storage           |
 | Notifications        | Firebase Cloud Messaging   |
-| AI Integration       | Groq API                   |
-| Networking           | Retrofit2                  |
-| HTTP Client          | OkHttp3                    |
+| AI                   | Groq API                   |
+| Networking           | Retrofit2 + OkHttp3        |
 | Image Loading        | Glide                      |
 | Animations           | Lottie                     |
 | PDF Generation       | iText7                     |
 | Build System         | Gradle Kotlin DSL          |
 
-# Installation Guide
+# Installation
 
-## Prerequisites
+## Requirements
 
 * Android Studio
-* Android SDK API 24+
-* Firebase Project Configuration
+* Android SDK 24+
+* Firebase Project
 * Groq API Key
 
-## Setup Instructions
-
-### 1. Clone Repository
+## Setup
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/MediTrackAI.git
 ```
 
-### 2. Open Project
-
-Open the project using Android Studio.
-
-### 3. Configure Firebase
-
-Replace the existing:
-
-```text
-google-services.json
-```
-
-with your Firebase configuration file.
-
-### 4. Add Groq API Key
-
-Insert your API key inside:
-
-```text
-RetrofitClient.java
-```
-
-### 5. Sync Gradle
-
-Sync project dependencies and build files.
-
-### 6. Run Application
-
-Build and run the application on an Android Emulator or Physical Device.
-
-# APK Installation
-
-1. Download the APK file.
-2. Enable installation from unknown sources.
-3. Open the APK file.
-4. Install the application.
-5. Launch MediTrack AI.
-6. Register or login.
-7. Start using the healthcare platform.
+1. Open the project in Android Studio.
+2. Add your `google-services.json` file.
+3. Configure your Groq API key in `RetrofitClient.java`.
+4. Sync Gradle dependencies.
+5. Build and run the application.
 
 # Privacy & Security
 
-MediTrack AI prioritizes user privacy and data protection.
-
 * Secure Firebase Authentication
-* Encrypted cloud-based data storage
-* Role-based access control
-* Protected healthcare records
-* Secure prescription management
-* No commercial sharing of user data
-
-User information is only used to provide healthcare-related services within the application.
+* Encrypted Cloud Storage
+* Role-Based Access Control
+* Protected Healthcare Records
+* Secure Prescription Management
 
 # Future Enhancements
 
-* Video Consultation System
+* Video Consultation
 * Electronic Health Records Integration
 * Advanced AI Disease Prediction
 * Multi-Language Support
 * Wearable Device Integration
 * Health Analytics Dashboard
-* Cloud Backup System
 
 # Developers
 
-## Noman Hameed
+### Noman Hameed
 
-* BS Computer Science
-* University of Layyah
+* BS Computer Science, University of Layyah
 * Email: [gxnoman235@gmail.com](mailto:gxnoman235@gmail.com)
 * GitHub: https://github.com/NOMAN23535
 
-## Muhammad Saad
+### Muhammad Saad
 
-* BS Computer Science
-* University of Layyah
+* BS Computer Science, University of Layyah
 * Email: [msaad17060@gmail.com](mailto:msaad17060@gmail.com)
 * GitHub: https://github.com/Msaad1122
 
 # License
 
-This project was developed as an academic healthcare management system for educational and research purposes.
+This project was developed for educational and research purposes.
 
 © 2026 MediTrack AI. All Rights Reserved.
