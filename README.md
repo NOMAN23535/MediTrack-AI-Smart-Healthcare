@@ -1,6 +1,32 @@
+App Name
+MediTrack AI
+
 # MediTrack-AI-Smart-Healthcare
 An AI-powered Android healthcare application that enables symptom analysis, appointment management, medicine reminders, digital prescriptions, and doctor-patient collaboration through a secure healthcare ecosystem.
-MediTrack AI
+
+App Icon
+MediTrack AI Official App Icon (512×512 PNG)
+All in logo icon folder.
+
+App Screenshots
+All in the screenshot folder.
+
+Category
+Medical
+
+Version Information
+Version Name: 1.0
+Version Code: 1
+
+Privacy Policy
+MediTrack AI securely stores user data using Firebase services. User information is used only for healthcare-related features including appointments, prescriptions, medicine reminders, and AI-powered health analysis. User data is never sold or shared for commercial purposes.
+
+App Permissions
+Internet Access
+Notifications
+Camera (Profile Picture Upload)
+Storage Access (Prescription PDFs)
+Phone Authentication (OTP Verification)
 
 # User Roles & Access Flow
 ## Administrator
@@ -8,6 +34,7 @@ The application includes a pre-configured administrator account responsible for 
 
 ### Admin Login Credentials
 Email:admin@gmail.com
+
 Password: 123456
 
 ### Admin Responsibilities
@@ -62,11 +89,6 @@ Doctor Provides Treatment → Prescription Generated
 Patient Receives Prescription & Reminders
 AI Health Analyzer Assists Patient with Preliminary Health Guidance
 
-# About the App
-
-MediTrack AI is a full-featured Android application developed using Java, Firebase, and Groq AI. The system supports three user roles: Patients, Doctors, and Administrators.
-
-Patients can manage appointments, medicine schedules, prescriptions, and receive AI-powered health guidance. Doctors can handle patient appointments, create digital prescriptions, and review patient records. Administrators oversee the entire platform, manage doctor approvals, monitor activities, and maintain system integrity.
 
 # Application Information
 
@@ -82,7 +104,7 @@ Patients can manage appointments, medicine schedules, prescriptions, and receive
 | Authentication | Firebase Authentication    |
 | AI Integration | Groq API                   |
 | Minimum SDK    | 24                         |
-| Target SDK     | 34                         |
+| Target SDK     | 36                         |
 
 # Core Features
 
