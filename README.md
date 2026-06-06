@@ -1,41 +1,58 @@
-App Name
-MediTrack AI
+# MediTrack AI
 
-# MediTrack-AI-Smart-Healthcare
+## MediTrack-AI-Smart-Healthcare
+
 An AI-powered Android healthcare application that enables symptom analysis, appointment management, medicine reminders, digital prescriptions, and doctor-patient collaboration through a secure healthcare ecosystem.
 
-App Icon
+## App Information
+
+### App Name
+
+MediTrack AI
+
+### App Icon
+
 MediTrack AI Official App Icon (512×512 PNG)
-All in logo icon folder.
 
-App Screenshots
-All in the screenshot folder.
+All application icons are available in the **Logo Icon** folder.
 
-Category
+### App Screenshots
+
+All application screenshots are available in the **Screenshots** folder.
+
+### Category
+
 Medical
 
-Version Information
-Version Name: 1.0
-Version Code: 1
+### Version Information
 
-Privacy Policy
+**Version Name:** 1.0
+
+**Version Code:** 1
+
+### Privacy Policy
+
 MediTrack AI securely stores user data using Firebase services. User information is used only for healthcare-related features including appointments, prescriptions, medicine reminders, and AI-powered health analysis. User data is never sold or shared for commercial purposes.
 
-App Permissions
-Internet Access
-Notifications
-Camera (Profile Picture Upload)
-Storage Access (Prescription PDFs)
-Phone Authentication (OTP Verification)
+### App Permissions
+
+* Internet Access
+* Notifications
+* Camera (Profile Picture Upload)
+* Storage Access (Prescription PDFs)
+* Phone Authentication (OTP Verification)
 
 # User Roles & Access Flow
+
 ## Administrator
+
 The application includes a pre-configured administrator account responsible for managing the entire healthcare ecosystem.
 
 ### Admin Login Credentials
-Email:admin@gmail.com
 
-Password: 123456
+**Email:** [admin@gmail.com](mailto:admin@gmail.com)
+
+**Password:** 123456
 
 ### Admin Responsibilities
 
@@ -49,6 +66,7 @@ Password: 123456
 ## Patient
 
 Patients can directly register and access the application without requiring administrative approval.
+
 ### Patient Features
 
 * Direct account registration and login.
@@ -60,6 +78,7 @@ Patients can directly register and access the application without requiring admi
 * Medicine inventory management.
 
 ## Doctor
+
 Doctors must submit a registration request before gaining access to doctor functionalities.
 
 ### Doctor Registration Process
@@ -81,14 +100,21 @@ Doctors must submit a registration request before gaining access to doctor funct
 
 # System Workflow
 
+```text
 Patient Registration → Instant Access
-Doctor Registration → Admin Approval Required
-Admin Approval → Doctor Account Activated
-Patient Books Appointment → Doctor Reviews Request
-Doctor Provides Treatment → Prescription Generated
-Patient Receives Prescription & Reminders
-AI Health Analyzer Assists Patient with Preliminary Health Guidance
 
+Doctor Registration → Admin Approval Required
+
+Admin Approval → Doctor Account Activated
+
+Patient Books Appointment → Doctor Reviews Request
+
+Doctor Provides Treatment → Prescription Generated
+
+Patient Receives Prescription & Reminders
+
+AI Health Analyzer Assists Patient with Preliminary Health Guidance
+```
 
 # Application Information
 
@@ -193,6 +219,7 @@ AI Health Analyzer Assists Patient with Preliminary Health Guidance
 | Build System         | Gradle Kotlin DSL          |
 
 # Installation Guide
+
 ## Prerequisites
 
 * Android Studio
@@ -201,30 +228,43 @@ AI Health Analyzer Assists Patient with Preliminary Health Guidance
 * Groq API Key
 
 ## Setup Instructions
+
 ### 1. Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/MediTrackAI.git
 ```
+
 ### 2. Open Project
+
 Open the project using Android Studio.
+
 ### 3. Configure Firebase
+
 Replace the existing:
+
 ```text
 google-services.json
 ```
+
 with your Firebase configuration file.
+
 ### 4. Add Groq API Key
+
 Insert your API key inside:
+
 ```text
 RetrofitClient.java
 ```
+
 ### 5. Sync Gradle
 
 Sync project dependencies and build files.
+
 ### 6. Run Application
 
 Build and run the application on an Android Emulator or Physical Device.
+
 # APK Installation
 
 1. Download the APK file.
@@ -236,16 +276,18 @@ Build and run the application on an Android Emulator or Physical Device.
 7. Start using the healthcare platform.
 
 # Privacy & Security
+
 MediTrack AI prioritizes user privacy and data protection.
 
-* Secure Firebase Authentication.
-* Encrypted cloud-based data storage.
-* Role-based access control.
-* Protected healthcare records.
-* Secure prescription management.
-* No commercial sharing of user data.
+* Secure Firebase Authentication
+* Encrypted cloud-based data storage
+* Role-based access control
+* Protected healthcare records
+* Secure prescription management
+* No commercial sharing of user data
 
 User information is only used to provide healthcare-related services within the application.
+
 # Future Enhancements
 
 * Video Consultation System
@@ -258,18 +300,18 @@ User information is only used to provide healthcare-related services within the 
 
 # Developers
 
-### Noman Hameed
+## Noman Hameed
 
 * BS Computer Science
 * University of Layyah
-* Email:gxnoman235@gmail.com
+* Email: [gxnoman235@gmail.com](mailto:gxnoman235@gmail.com)
 * GitHub: https://github.com/NOMAN23535
 
-### Muhammad Saad
+## Muhammad Saad
 
 * BS Computer Science
 * University of Layyah
-* Email: msaad17060@gmail.com
+* Email: [msaad17060@gmail.com](mailto:msaad17060@gmail.com)
 * GitHub: https://github.com/Msaad1122
 
 # License
