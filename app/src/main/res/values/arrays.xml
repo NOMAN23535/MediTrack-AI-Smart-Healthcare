@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="specializations">
+        <item>General Physician</item>
+        <item>Cardiologist</item>
+        <item>Dermatologist</item>
+        <item>Neurologist</item>
+        <item>Orthopedic Surgeon</item>
+        <item>Pediatrician</item>
+        <item>Gynecologist</item>
+        <item>Psychiatrist</item>
+        <item>Gastroenterologist</item>
+        <item>Endocrinologist</item>
+        <item>Pulmonologist</item>
+        <item>Nephrologist</item>
+        <item>Oncologist</item>
+        <item>Ophthalmologist</item>
+        <item>ENT Specialist</item>
+        <item>Urologist</item>
+        <item>Radiologist</item>
+        <item>Dentist</item>
+        <item>Surgeon</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>

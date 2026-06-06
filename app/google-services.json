@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509637644781",
+    "project_id": "meditrackaiproject",
+    "storage_bucket": "meditrackaiproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509637644781:android:df27a5b8f206f9049097e4",
+        "android_client_info": {
+          "package_name": "com.example.meditrackaiproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsaRxSpBLbjpr9Pva3hxTRun_IR5MNVBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

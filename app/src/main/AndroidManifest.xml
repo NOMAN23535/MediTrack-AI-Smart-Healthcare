@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MediTrackAiProject">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".auth.LoginActivity" />
+        <activity android:name=".auth.RegisterActivity" />
+        <activity android:name=".auth.RoleSelectionActivity" />
+        <activity android:name=".auth.RegisterPatientActivity" />
+        <activity android:name=".auth.RegisterDoctorActivity" />
+        <activity android:name=".auth.RegistrationSubmittedActivity" />
+        <activity android:name=".auth.AdminLoginActivity" />
+        <activity android:name=".auth.PhoneAuthActivity" />
+        <activity android:name=".auth.ChangePasswordActivity" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".admin.AdminDashboardActivity" />
+        <activity android:name=".admin.AdminDoctorsActivity" />
+        <activity android:name=".admin.AdminPatientsActivity" />
+        <activity android:name=".admin.AdminAppointmentsActivity" />
+        <activity android:name=".admin.AdminPrescriptionsActivity" />
+        <activity android:name=".admin.AdminUsersActivity" />
+        <activity android:name=".admin.AdminChatsActivity" />
+        <activity android:name=".admin.LogoutActivity" />
+
+        <activity android:name=".patient.PatientDashboardActivity" />
+        <activity android:name=".patient.AiAnalyzerActivity" />
+        <activity android:name=".patient.AnalysisResultActivity" />
+        <activity android:name=".patient.RecommendedDoctorsActivity" />
+        <activity android:name=".patient.ChatbotActivity" />
+        <activity android:name=".patient.MedicineManagementActivity" />
+        <activity android:name=".patient.MedicineReportsActivity" />
+        <activity android:name=".patient.BookAppointmentActivity" />
+        <activity android:name=".patient.PrescriptionListActivity" />
+        <activity android:name=".patient.AppointmentHistoryActivity" />
+        <activity android:name=".patient.UploadPrescriptionActivity" />
+
+        <activity android:name=".doctor.DoctorDashboardActivity" />
+        <activity android:name=".doctor.PrescriptionActivity" />
+        <activity android:name=".doctor.PrescriptionPreviewActivity" />
+        <activity android:name=".doctor.AppointmentDetailActivity" />
+        <activity android:name=".doctor.DoctorAppointmentHistoryActivity" />
+
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".notifications.NotificationsActivity" />
+
+        <service
+            android:name=".notifications.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".reminders.MedicineReminderReceiver" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

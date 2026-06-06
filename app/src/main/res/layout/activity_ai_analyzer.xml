@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:title="AI Symptom Analyzer"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnalyze"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your Symptoms"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <LinearLayout
+                    android:id="@+id/layoutSymptomsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipFever"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fever"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipCough"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cough"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipHeadache"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Headache"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipVomiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vomiting"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipFatigue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fatigue"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipChestPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chest Pain"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipStomachPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stomach Pain"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipSoreThroat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sore Throat"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipNausea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nausea"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipDizziness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dizziness"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipBodyAches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Body Aches"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_100" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chipBreathing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Breathing Problems"
+                        android:textSize="16sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Other Symptoms"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etOtherSymptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:hint="Type other symptoms here..."
+                android:minLines="3"
+                android:padding="12dp"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Analyze Symptoms"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
